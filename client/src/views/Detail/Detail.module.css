@@ -1,0 +1,218 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.back {
+    color:#ff18ff;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: #AF00B0;
+}
+
+.logo {
+    margin: 50px 0px;
+    width: 18%;
+}
+
+.containerDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
+    border-radius: 15px;
+}
+
+.title {
+    border-radius: 15px 15px 0 0;
+    width: 680px;
+    color: #1FF2FF;
+    background-color: #000;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.img {
+    width: 680px;
+    height: 400px;
+    background-color: #000;
+}
+
+.description {
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    opacity: 0.7;
+    color: white;
+    width: 600px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.desc > span {
+    width: 500px;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.hr {
+    width: 82%;
+    background-color:#1FF2FF;
+    height: 2px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.desc2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.desc2 > h2 {
+    color: #ff18ff;
+    font-size: 20px;
+}
+
+.desc > h2 {
+    color: #ff18ff;
+    font-size: 20px;
+}
+
+.desc2 > span {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.relrat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-bottom: 20px;
+}
+
+.relratdetail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.relratdetail > h2 {
+    color: #ff18ff;
+    font-size: 20px;
+}
+
+.relratdetail > p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.Relrat > h2 {
+    color: #ff18ff;
+    font-size: 20px;
+}
+
+.Relrat > p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.delete {
+    border:none;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 800;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    color: white;
+    width: 80px;
+    text-align: center;
+    background-color: #AF00B0;
+    border-radius: 5px;
+    transition: all .3s;
+    box-shadow: 2px 2px 12px #AF00B0,
+                -2px -2px 12px #AF00B0;
+}
+
+.delete:hover {
+    background-color: #ff0000;
+    box-shadow: 2px 2px 12px #630000,
+                -2px -2px 12px #630000;
+}
+
+@media (max-width: 560px) {
+    .containerDetail {
+        margin-left: 30px;
+        width: 300px;
+    }
+    .title {
+        width: 300px;
+        font-size: 12px;
+    }
+
+    .img {
+        width: 300px;
+        height: auto;
+    }
+    .description {
+        width: 300px;
+        padding: 0px;
+    }
+
+    .desc > span {
+        font-size: 12px;
+        width: 250px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .relrat {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .relratdetail {
+        gap: 1rem;
+    }
+
+    .relratdetail > h2 {
+        font-size: 15px;
+    }
+    .relratdetail > p {
+        font-size: 12px;
+    }
+
+    .desc2 {
+        width: 275px;
+        margin-left: 14px;;
+    }
+
+    .desc2 > h2 {
+        font-size: 15px;
+    }
+
+    .desc2 > span {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,15 @@
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 17%;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10%;
+    color: white;
+}

@@ -1,0 +1,62 @@
+.mainCard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 1) 0px 0px 15px;
+    background-color: #000;
+    border-radius: 4px;
+}
+
+.rating {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon {
+    color:#ffbf00;
+}
+
+.image {
+    width:300px;
+    height:190px;
+    background-color: #00000073;
+}
+
+.image:hover {
+    opacity: 0.5;
+    transition: 0.6s;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.p {
+    color: #1FF2FF;
+    font-weight:800;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+.prat {
+    color: #ff18ff;
+    font-weight:800;
+    padding-left: 10px;
+    font-size: 12px;
+}
+
+@media (max-width: 560px) {
+    .image {
+        width: 100%;
+    }
+}

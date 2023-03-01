@@ -1,0 +1,44 @@
+.contaier {
+    display: flex;
+}
+
+.input {
+    border: none;
+    background-color: #000;
+    border-bottom: 2px solid #1FF2FF;
+    color: white;
+}
+
+.button {
+    border: none;
+    background-color:#AF00B0;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    color: white;
+    transition: all .3s;
+    box-shadow: 2px 2px 12px #AF00B0,
+                -2px -2px 12px #AF00B0;
+}
+
+.button:hover {
+    box-shadow: 2px 2px 12px #ff18ff,
+                -2px -2px 12px #ff18ff;
+}
+
+@media (max-width: 560px) {
+    .contaier {
+        display: flex;
+        flex-direction: column;
+    }
+    .input {
+        width: 50px;
+        margin-bottom: 20px;
+        font-size: 10px;
+        margin-left: -13px;
+    }
+
+    .button {
+        margin-left: -5px;
+    }
+}
