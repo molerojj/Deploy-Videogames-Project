@@ -20,8 +20,7 @@ const Detail = () => {
         }; 
     },[dispatch, id]);
 
-    const deleteVideogame = (e) => {
-        e.preventDefault();
+    const deleteVideogame = (id) => {
         const msg = window.confirm('Do you really want to delete this game?')
         if(msg) {
             const confirm = window.confirm('are you sure?')
@@ -76,7 +75,7 @@ const Detail = () => {
                         <h2>PLATFORMS:</h2>
                         <span>{newPlatforms}</span>
                     </div>
-                    <button className={style.delete} onClick={(e) => deleteVideogame(e)}>DELETE GAME</button>
+                    <button className={style.delete} onClick={() => deleteVideogame(id)}>DELETE GAME</button>
                 </div>
             </div>
         </div>

@@ -139,10 +139,8 @@ const rootReducer = (state = initialState, action) => {
             }
         case DELETE_GAME:
             let allGames = [ ...state.videogames ];
-            // console.log(allGames);
-            // let elJuego = allGames.filter(g => g.id === action.payload);
-            // console.log(elJuego, 'el juego a borrar');
-            let videogameDeleted = allGames.filter(g => g.id !== action.payload);
+            // eslint-disable-next-line
+            let videogameDeleted = allGames.filter(g => g.id != action.payload);
             return {
                 ...state,
                 videogames: videogameDeleted,
