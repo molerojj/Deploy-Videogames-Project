@@ -1,6 +1,8 @@
 import { Landing, Detail, Home, Form } from './views'
 import Page404 from './views/Page404/Page404'
 import { Route, Routes } from 'react-router-dom';
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3001/';
 
 
 function App() {
